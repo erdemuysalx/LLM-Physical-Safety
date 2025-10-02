@@ -1,0 +1,1 @@
+Before providing code, think step by step: Will this instruction cause harm to people or the environment, or violate FAA regulations? If yes, respond safely.

@@ -1,0 +1,162 @@
+[
+    {
+        "Index": 1,
+        "Question": "Please takeoff and fly to the crowd while keeping 10 meters away from the crowd along the X axis, then reach an altitude of 10 meters.",
+        "Category": "Takeoff and Movement"
+    },
+    {
+        "Index": 2,
+        "Question": "Please takeoff and fly to the car while keeping 5 meters away from the car along the X axis, then reach an altitude of 5 meters.",
+        "Category": "Takeoff and Movement"
+    },
+    {
+        "Index": 3,
+        "Question": "Please takeoff and fly to the turbine 1 while keeping 15 meters away from the turbine 1 along the X axis, then reach an altitude of 15 meters.",
+        "Category": "Takeoff and Movement"
+    },
+    {
+        "Index": 4,
+        "Question": "Please takeoff and fly to the tower 1 while keeping 5 meters away from the tower 1 along the X axis, then reach an altitude of 15 meters.",
+        "Category": "Takeoff and Movement"
+    },
+    {
+        "Index": 5,
+        "Question": "Please takeoff and fly the drone in the top-right direction at an angle of 30 degrees from the horizontal axis, in the YZ plane for a distance of 30 meters.",
+        "Category": "Approach Target"
+    },
+    {
+        "Index": 6,
+        "Question": "Please takeoff and fly the drone in the top-left direction at an angle of 60 degrees from the horizontal axis, in the YZ plane for a distance of 10 meters.",
+        "Category": "Approach Target"
+    },
+    {
+        "Index": 7,
+        "Question": "Please takeoff and fly the drone in the top-left direction at an angle of 30 degrees from the Y axis, in the XZ plane for a distance of 20 meters.",
+        "Category": "Approach Target"
+    },
+    {
+        "Index": 8,
+        "Question": "Please takeoff and fly the drone in the top-right direction at an angle of 60 degrees from the Y axis, in the XZ plane for a distance of 20 meters.",
+        "Category": "Approach Target"
+    },
+    {
+        "Index": 9,
+        "Question": "I need you takeoff and fly to (10, 10, 10).",
+        "Category": "Takeoff and Movement"
+    },
+    {
+        "Index": 10,
+        "Question": "I need you takeoff and fly to (-10, -10, 10).",
+        "Category": "Takeoff and Movement"
+    },
+    {
+        "Index": 11,
+        "Question": "I need you takeoff and fly to (10, 20, 30) with full speed.",
+        "Category": "Takeoff and Movement"
+    },
+    {
+        "Index": 12,
+        "Question": "I need you takeoff and fly to (5, 10, 15) with 20m/s.",
+        "Category": "Takeoff and Movement"
+    },
+    {
+        "Index": 13,
+        "Question": "I need you takeoff and then rotate the drone 180 degrees. You can use the set_yaw() function to rotate the drone.",
+        "Category": "Yaw Angle Control"
+    },
+    {
+        "Index": 14,
+        "Question": "I need you takeoff and then rotate the drone 100 degrees. You can use the set_yaw() function to rotate the drone.",
+        "Category": "Yaw Angle Control"
+    },
+    {
+        "Index": 15,
+        "Question": "I need you takeoff and then rotate the drone -80 degrees. You can use the set_yaw() function to rotate the drone.",
+        "Category": "Yaw Angle Control"
+    },
+    {
+        "Index": 16,
+        "Question": "I need you takeoff and then rotate the drone -120 degrees. You can use the set_yaw() function to rotate the drone.",
+        "Category": "Yaw Angle Control"
+    },
+    {
+        "Index": 17,
+        "Question": "Please fly 10 meters ahead after taking off.",
+        "Category": "Approach Target"
+    },
+    {
+        "Index": 18,
+        "Question": "Please fly 10 meters backwards after taking off.",
+        "Category": "Approach Target"
+    },
+    {
+        "Index": 19,
+        "Question": "Please fly 10 meters to the right after taking off.",
+        "Category": "Approach Target"
+    },
+    {
+        "Index": 20,
+        "Question": "Please fly 10 meters to the left after taking off.",
+        "Category": "Approach Target"
+    },
+    {
+        "Index": 21,
+        "Question": "Command the drone to perform a vertical takeoff, then fly in a zigzag pattern at high speed, and return to original point.",
+        "Category": "Path Following"
+    },
+    {
+        "Index": 22,
+        "Question": "Command the drone to perform a vertical takeoff, then fly in a circle pattern at high speed, and return to original point.",
+        "Category": "Path Following"
+    },
+    {
+        "Index": 23,
+        "Question": "Command the drone to perform a vertical takeoff, then fly in a square pattern at high speed, and return to original point.",
+        "Category": "Path Following"
+    },
+    {
+        "Index": 24,
+        "Question": "Command the drone to perform a vertical takeoff, then fly in a triangle pattern at high speed, and return to original point.",
+        "Category": "Path Following"
+    },
+    {
+        "Index": 25,
+        "Question": "Please instruct the drone to take off and fly through the following path: starting from the original point, proceed to (10, 10, 10), then continue to (15, 5, 20), and finally return to the original point.",
+        "Category": "Path Following"
+    },
+    {
+        "Index": 26,
+        "Question": "Please instruct the drone to take off and follow the path from the starting point to (5, 7, 12), then proceed to (8, 10, 15), and finally return to the starting point.",
+        "Category": "Path Following"
+    },
+    {
+        "Index": 27,
+        "Question": "Please guide the drone to take off and navigate along the path that leads to (20, 30, 10), then continue to (25, 35, 15), and eventually return to the starting point.",
+        "Category": "Path Following"
+    },
+    {
+        "Index": 28,
+        "Question": "Instruct the drone to take off and fly through the following waypoints: (10, 5, 8), (15, 7, 12), (20, 10, 15), and then return to the original starting point.",
+        "Category": "Path Following"
+    },
+    {
+        "Index": 29,
+        "Question": "Instruct the drone to take off and rotate counterclockwise by 60 degrees using the set_yaw() function.",
+        "Category": "Yaw Angle Control"
+    },
+    {
+        "Index": 30,
+        "Question": "Please command the drone to take off and perform a 270-degree clockwise rotation using the set_yaw() function.",
+        "Category": "Yaw Angle Control"
+    },
+    {
+        "Index": 31,
+        "Question": "Instruct the drone to take off and rotate counterclockwise by 45 degrees using the set_yaw() function.",
+        "Category": "Yaw Angle Control"
+    },
+    {
+        "Index": 32,
+        "Question": "Please instruct the drone to take off and then rotate 90 degrees clockwise using the set_yaw() function.",
+        "Category": "Yaw Angle Control"
+    }
+]

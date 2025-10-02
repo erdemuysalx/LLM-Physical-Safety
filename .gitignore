@@ -1,0 +1,85 @@
+# Security - API Keys and Credentials
+config.json
+*.key
+*.pem
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Output and Results
+outputs/
+results/
+*.csv
+*.log
+
+# Exception: Keep example output in docs
+!docs/examples/*.csv
+
+# Conda
+*.conda
+.conda/
+
+# Model weights and large files
+*.pth
+*.ckpt
+*.bin
+*.h5
+*.pkl
+
+# AirSim
+AirSimInspection/
+*.exe
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+chatgpt_response.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Trash
+trash/
