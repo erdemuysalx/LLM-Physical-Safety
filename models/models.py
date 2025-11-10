@@ -5,6 +5,7 @@ from abc import ABC
 import torch
 import openai
 import google.generativeai as genai
+import ollama
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 from .chat_history import ChatHistory
@@ -503,3 +504,38 @@ class Granite(LLMModel):
         answer_index = out.rfind('Answer:\n')
         out = out[answer_index + len('Answer:\n'):].strip()
         return out
+    
+
+class Ollama(LLMModel):
+    """
+        Large language model for interfacing with various open source models in Ollama model library.
+    """
+    def __init__(self, model_name="deepseek-r1:14b",
+                 max_new_tokens=Config.max_new_tokens,
+                 temperature=Config.temperature,
+                 system_prompt=None):
+        super(Ollama, self).__init__(model_name, max_new_tokens, temperature, device='cpu')
+        self.chat_history = ChatHistory(system_prompt=system_prompt)
+        self.client = ollama.Client(host=get_config("OLLAMA_HOST"))  # Default is localhost:11434
+
+    def predict(self, prompt):
+        # Construct conversation history for context
+        messages = [
+            {"role": "system", "content": self.chat_history.system_prompt},
+            {"role": "user", "content": self.chat_history.q1},
+            {"role": "assistant", "content": self.chat_history.a1},
+            {"role": "user", "content": prompt}
+        ]
+        try:
+            response = self.client.chat(
+                model=self.model_name,
+                messages=messages,
+                options={
+                    "temperature": self.temperature,
+                    "num_predict": self.max_new_tokens
+                }
+            )
+
+            return response['message']['content']
+        except Exception as e:
+            return f"Error communicating with Ollama: {e}"

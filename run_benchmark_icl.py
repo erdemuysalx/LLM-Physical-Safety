@@ -23,7 +23,7 @@ if __name__ == "__main__":
     "deliberate", "unintentional", "violation", "utility"
     """
     print("Starting benchmark, please wait...")
-    model_name = "gemini-pro"
+    model_name = "gemma3:4b"
     datasets = ["deliberate"]
     model = LLM.create_model(model_name=model_name)
 

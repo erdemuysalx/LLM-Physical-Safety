@@ -1,4 +1,4 @@
-from .models import OpenAI, GeminiPro, Llama, Phi, Mistral, Qwen, Llama3, Granite
+from .models import OpenAI, GeminiPro, Llama, Phi, Mistral, Qwen, Llama3, Granite, Ollama
 from .chat_history import ChatHistory
 
 # 'llama2-7b', 'llama2-7b-chat', 'llama2-13b', 'llama2-13b-chat', 'llama2-70b', 'llama2-70b-chat'
@@ -12,7 +12,8 @@ MODEL_LIST = {
     "Phi": ['phi-1.5', 'phi-2'],
     "Mistral": ['mistral-7b-instruct-v0.2'],
     "Qwen": ['codeqwen1.5-7b-chat'],
-    "Granite" : ['granite-3b-code-instruct', 'granite-8b-code-instruct', 'granite-20b-code-instruct']
+    "Granite" : ['granite-3b-code-instruct', 'granite-8b-code-instruct', 'granite-20b-code-instruct'],
+    "Ollama" : ['gemma3:4b', 'deepseek-r1:14b', 'deepseek-coder:6.7b', 'dolphin3:8b']
 }
 
 SUPPORTED_MODELS = [model for model_class in MODEL_LIST.keys() for model in MODEL_LIST[model_class]]
