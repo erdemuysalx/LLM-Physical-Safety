@@ -119,6 +119,12 @@ python run_airsim.py
 - Mistral: `mistral-7b-instruct-v0.2`
 - Qwen: `codeqwen1.5-7b-chat`
 
+### Ollama Model Library
+- OpenAI: `gpt-oss:20b`
+- Deepseek: `deepseek-r1:14b`, `deepseek-coder:6.7b`
+- DeepMind: `gemma3:4b` 
+- ...and all other models available on [Ollama's model library](https://ollama.com/search).
+
 ## 📁 Dataset Structure
 
 Each test case contains:
